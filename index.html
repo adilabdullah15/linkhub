@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LinkHub — all my links in one place." />
+  <title>LinkHub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Centered glassmorphism profile card -->
+  <main class="card" id="card">
+
+    <!-- Avatar circle (rendered from CONFIG.avatar) -->
+    <div class="avatar" id="avatar" aria-hidden="true"></div>
+
+    <!-- Name + tagline (rendered from CONFIG) -->
+    <h1 class="name" id="name"></h1>
+    <p class="tagline" id="tagline"></p>
+
+    <!-- Link buttons (rendered from CONFIG.links) -->
+    <nav class="links" id="links" aria-label="Social links"></nav>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span id="footer-text"></span>
+    </footer>
+
+  </main>
+
+  <!-- Load config first, then the renderer -->
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
